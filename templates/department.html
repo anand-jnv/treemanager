@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+   <body>
+   <ol>
+   {% for comp in data %} 
+   		<li> {{ data[comp]['name'] }}
+   		<ul type='o'>
+   		{% for dept in data[comp]['department'] %}
+   			<li> {{ dept }} </li>
+   		{% endfor %}
+   		</ul>
+   		</li>
+   {% endfor %}
+   </ol>
+   </body>
+</html>
